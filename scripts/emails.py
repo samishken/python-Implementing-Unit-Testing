@@ -19,7 +19,7 @@ def find_email(argv):
   try:  
     fullname = str(argv[1] + " " + argv[2])
     # Preprocess the data
-    email_dict = populate_dictionary('/home/student-03-4bdaaaf79fab/data/user_emails.csv')
+    email_dict = populate_dictionary('/home/{{ username }}/data/user_emails.csv')
     # Find and print the email
     # If email exists, print it
     if email_dict.get(fullname.lower()):
